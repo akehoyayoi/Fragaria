@@ -24,6 +24,9 @@ Unless required by applicable law or agreed to in writing, software distributed 
 @interface SMLLineNumbers : NSObject {
 	NSPoint zeroPoint;
 	NSClipView *updatingLineNumbersForClipView;
+    
+    id document;
+    NSDictionary* attributes;
 }
 @property (nonatomic,retain) id document;
 @property (nonatomic,retain) NSDictionary* attributes;
